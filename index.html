@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-  	<link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
-
-    <title>Tree Example</title>
-
+    <title>CCIC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="imageSearch.css">
   </head>
 
   <body>
@@ -24,13 +22,30 @@
 
   	<input type="text" id="stext"/>
   	<button id="sbutton">Story</button>
-<!-- load the d3.js library -->	
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="https://www.google.com/jsapi"></script>
-	
-<script src="index.js"></script>
+
+
+    <!-- load the d3.js library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+
+    <!-- google searchbar -->
+    <div class="searchbar">
+        <gcse:searchbox></gcse:searchbox>
+    </div>
+    <script src="imageSearch.js"></script>
+
+    <!-- <script src="https://www.google.com/jsapi"></script> -->
+
+    <script src="index.js"></script>
+
+
+    <!-- google search result -->
+    <div class="main-content">
+      <gcse:searchresults></gcse:searchresults>
+      <gcse:searchresults enableImageSearch="true" defaultToImageSearch="true" searchType = "image"></gcse:searchresults>
+    </div>
 
   </body>
 </html>
